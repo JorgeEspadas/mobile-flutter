@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="CustomDocumentVerificationTheme" parent="Theme.DocumentVerification">
         <!-- Customize your DocumentVerification theme by overriding this theme in your App -->
     </style>
@@ -10,99 +9,6 @@
     <color name="CustomAndroidBackground">#fdffab</color>
 
      <style name="CustomNetverifyTheme" parent="Theme.Netverify">
-      <!-- global colors -->
-
-      <item name="colorPrimary">#0064fe</item>
-      <item name="colorPrimaryDark">#0050cb</item>
-      <item name="colorControlNormal">#ffffff</item>
-      <item name="colorOnSurface">#000000</item>
-      <item name="jumio_toolbarStyle">@style/Jumio.Actionbar.Title</item>
-      <item name="jumio_toolbarSubStyle">@style/Jumio.Actionbar.Subtitle</item>
-      <item name="jumio_dialogNegativeButtonTextColor">#BDBDBD</item>
-      <item name="jumio_dialogPositiveButtonTextColor">#0064fe</item>
-      <item name="jumio_shutterbutton_pressed">#0064fe</item>
-      <item name="jumio_shutterbutton_default">#000000</item>
-      <item name="jumio_shutterbutton_background">#ffffff</item>
-      <item name="android:windowBackground">@color/CustomAndroidBackground</item>
-      <item name="editTextColor">#FFFFFF</item>
-      <item name="android:editTextColor">#FFFFFF</item>
-
-      <!-- loading sdk specific colors -->
-
-      <item name="netverify_scanOptionsLoadingProgress">#FFFFFF</item>
-      <!-- Replace the HEX color value above to change the loading progress color (SDK start)-->
-
-      <!-- select document specific colors -->
-
-      <item name="netverify_scanOptionsLoadingBackground">#0064fe</item>
-      <item name="netverify_scanOptionsItemBackground">#FFFFFF</item>
-      <item name="netverify_scanOptionsItemForeground">#000000</item>
-      <item name="netverify_scanOptionsItemHeaderBackground">#F2F2F2</item>
-
-      <!-- country selection specific colors -->
-
-      <item name="netverify_countryListCountryName">#000000</item>
-      <item name="netverify_countryListSeperator">#DDDDDD</item>
-
-      <!-- scan instructions colors -->
-
-      <item name="netverify_helpBackground">#B3ffffff</item><!--70%-->
-      <item name="netverify_helpProgressString">#80000000</item>
-      <item name="netverify_helpTitle">#000000</item>
-      <item name="netverify_helpImage">#000000</item>
-      <item name="netverify_helpSeperator">#33FFFFFF</item>
-      <item name="netverify_helpInstructions">#000000</item>
-      <item name="netverify_helpFallback">#0064fe</item>
-      <item name="netverify_helpFallbackText">#ffffff</item>
-
-      <!-- scan instructions NFC Passport specific colors -->
-
-      <item name="netverify_nfc_passport_cover">@color/jumio_white</item>
-      <item name="netverify_nfc_passport_foreground">@color/jumio_black</item>
-      <item name="netverify_nfc_passport_page_dark">@color/jumio_grey450</item>
-      <item name="netverify_nfc_passport_page_light">@color/jumio_grey300</item>
-      <item name="netverify_nfc_phone_background">@color/jumio_grey200</item>
-
-      <!-- scan document (scan screen) specific colors -->
-
-      <item name="netverify_scanOverlay">#B3FFFFFF</item>
-      <item name="netverify_scanOverlayFill">#66FFFFFF</item>
-      <item name="netverify_scanBackground">#40000000</item><!--25%-->
-
-      <!-- Authentication specific colors -->
-
-      <item name="zoom_customization">@style/CustomZoom</item>
-      <item name="zoom_customization_lowlight">@style/CustomZoomLowLight</item>
-
-      <!-- iProov specific colors -->
-
-      <item name="iproov_customization">@style/CustomIproov</item>
-
-      <!-- verification specific colors -->
-
-      <item name="netverify_confirmationBackground">#000000</item>
-      <item name="netverify_confirmationHintStyle">@style/Custom.Netverify.Confirmation.Hint</item>
-      <item name="materialButtonStyle">@style/Custom.Netverify.Confirmation.MaterialButton</item>
-      <item name="materialButtonOutlinedStyle">@style/Custom.Netverify.Confirmation.MaterialButton.Outlined</item>
-      <item name="netverify_confirmationIcon">#FFFFFF</item>
-
-      <!-- submission error (error screen) specific colors -->
-
-      <item name="netverify_submissionErrorStatusBar">#B3B3B3</item>
-      <item name="netverify_submissionErrorBackground">#E0E0E0</item>
-      <item name="netverify_submissionErrorTitle">#424242</item>
-      <item name="netverify_submissionErrorDescription">#757575</item>
-      <item name="netverify_submissionErrorSeperator">#757575</item>
-      <item name="netverify_submissionErrorImage">#FFFFFF</item>
-      <item name="netverify_submissionErrorButtonBackground">#FFFFFF</item>
-      <item name="netverify_submissionErrorButtonText">#222222</item>
-
-      <!-- submission success (success screen) specific colors -->
-
-      <item name="netverify_submissionProgressSuccessTitle">#FFFFFF</item>
-      <item name="netverify_submissionProgressSuccessDescription">#FFFFFF</item>
-      <item name="netverify_submissionProgressSuccessSeperator">#FFFFFF</item>
-      <item name="netverify_submissionProgressSuccessImage">#FFFFFF</item>
-      <item name="netverify_submissionProgressSuccessBackground">#0064fe</item>
-     </style>
+        <!-- Customize your Netverify theme with our Surface Tool - https://jumio.github.io/surface-android/  and copy the XML output from the Tool here or override this theme in your App -->
+    </style>
 </resources>
