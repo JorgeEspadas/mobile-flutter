@@ -25,17 +25,6 @@ class JumioMobileSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Pl
     // pre-Flutter-1.12 Android projects.
     companion object {
         private const val CHANNEL_NAME = "com.jumio.fluttersdk"
-
-        @Suppress("unused")
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            val instance = JumioMobileSdkPlugin()
-            val channel = MethodChannel(registrar.messenger(), CHANNEL_NAME)
-            channel.setMethodCallHandler(instance)
-            registrar.addActivityResultListener(instance)
-            registrar.addRequestPermissionsResultListener(instance)
-            instance.modules.forEach { it.bindToActivity(registrar.activity()) }
-        }
     }
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
@@ -74,7 +63,7 @@ class JumioMobileSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Pl
         return results.any { it }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray): Boolean {
         val results = modules.map { it.handlePermissionResult(requestCode, permissions, grantResults) }
         return results.any { it }
     }
